@@ -1,0 +1,132 @@
+
+/* Basic styling */
+body {
+    font-family: 'CircularStd', sans-serif;
+    margin: 0;
+    padding: 0;
+    word-break: break-word;
+}
+
+.hero {
+    background: url('/assets/img/hero-banner-img.png') no-repeat center center;
+    background-color: rgba(0, 0, 0, 0.4);    
+    text-align: left;
+    color: #333;
+    padding: 100px 0;
+}
+
+.hero-container {
+    position: relative;
+    display: block;
+    /* flex-direction: row; */
+    margin: 0 auto;
+    max-width: 650px;
+    width: 100%;
+    margin-left: 200px;
+    /* padding-right: 80px; */
+    padding: 80px 80px 20px 80px;
+
+
+}
+
+.hero-heading {
+    font-size: 54px;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: .25px;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: #fff;
+}
+
+.hero h6 {
+    font-size: 18px;
+    font-weight: 700;
+    font-style: normal;
+    color: #ff5a5f;
+}
+
+.button-container {
+    padding-top: 30px;
+    display: flex;
+}
+
+.cta {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    white-space: normal;
+    padding: 16px 40px;
+    width: auto;
+    margin: 10px 0 24px 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+
+.primary-button {
+    border: 1px solid #ff5a5f;
+    background: rgba(255, 90, 95, 1.0);
+}
+
+.primary-button:hover {
+    border: 1px solid #cc4d59;
+    background: rgba(204,77,89,1.0);
+}
+
+
+.secondary-button {
+    margin-left: 30px;
+
+    background-color: rgba(255, 255, 255, 0);
+    border: 3px solid #ff5a5f;
+}
+
+.secondary-button:hover {
+    border: 3px solid #ff5a5f;
+    background: rgba(255, 90, 95, 1.0);
+    color: #000;
+}
+
+
+/* Carousel */
+.slider-container {
+    padding-top: 80px;
+    width: 1140px;
+    height: 195px;
+    overflow: hidden;
+}
+
+#logo-slider {
+    display: flex;
+    animation: slide 5s linear infinite;
+}
+
+.logo-slide {
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+    height: 40px;
+    margin: 0 30px;
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

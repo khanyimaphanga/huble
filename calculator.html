@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/assets/css/calculator.css">
+
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="header"></div>
+        <h1>Calculator</h1>
+        <div class="calculator-container">
+            <input type="text" id="display" placeholder="0">
+            <br>
+            <button class="operator-button" onclick="appendOperator('+')">+</button>
+            <button class="operator-button" onclick="appendOperator('-')">-</button>
+            <button class="operator-button" onclick="appendOperator('*')">*</button>
+            <button class="operator-button" onclick="appendOperator('/')">/</button>
+            <br>
+        </div>
+
+        <div class="calculator-container">
+            <div class="result" id="mirror">0</div>
+            <p class="result" id="result"><span>Result: </span>0</p>
+        </div>
+
+        <button onclick="clearInput()">Clear</button>
+        <button onclick="calculateResult()">Calculate</button>
+
+    </div>
+
+    <script src="/assets/js/calculator.js"></script>
+
+</body>
+
+</html>
